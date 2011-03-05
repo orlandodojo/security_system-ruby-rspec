@@ -1,0 +1,59 @@
+Title Building Alarm System
+ 
+Narrative:
+  As a alarm
+  I want to secure the building
+  So that shit doesn't get stolen
+  
+ 
+//Acceptance Criteria: The building is secure
+ 
+  Scenario 1: Building Access Requested
+    Given that it is after business hours
+    When  Front door panel is a access is requested
+    Then  validate user access level
+      And grant access accordingly
+      And log request
+
+  Scenario 2: Elevator Access
+    Given that it is after business hours
+    When  Elevator access is requested
+    Then  validate access level
+      And grant access accordingly
+      And log request
+      
+  Scenario 3: Office office
+    Given office is locked
+    When  employee requests office access
+    Then  valid employee access level
+      And grant access accordingly
+      And log access request  
+    
+   Scenario 4: Lock mode
+    Given lockdown mode is activated
+    When  lockdown mode is activated
+      Then  secure all elevators
+      Then  Alert authorities
+      Then  Lockdown rooms
+      Activate visual notifications
+      Activate audible notifications
+      And authorities are alerted
+      And log event
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+      
+    Scenario 4: Secure secure areas
+      Given alarm is armed
+        And and it is after hours
+         When  motion is detected in secure areas
+         Then  alarm is activated
+           And authorities are alerted
+           And log request
